@@ -1,0 +1,52 @@
+@use '../module.scss' as m;
+
+.hero-name {
+    @include m.base-text;
+    font-size: 160px;
+    font-family: 'Cookie';
+    margin: 300px 0px 0px 80px
+}
+
+.hero-subtitle {
+    @include m.base-text;
+    font-family: 'Gelasio', serif;
+    font-size: 40px;
+    margin: 0px 0px 90px 10em;
+}
+
+.hero-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+
+    li  {
+        color: m.$primary;
+        margin: auto 50px;
+
+        a:before {
+            @include m.lrg-button-before
+        }
+
+        a {
+            text-decoration: none;
+            @include m.lrg-button;
+        }
+
+        a:after {
+            @include m.lrg-button-after;
+        }
+
+        a:active {
+           padding: 5px 15px;
+           margin: auto 15px;
+
+        }
+
+        @include m.glow-effect(a);
+    }
+
+}
+

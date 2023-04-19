@@ -1,0 +1,19 @@
+@use '../module.scss';
+
+.skills-container {
+    height: 334px;
+    width: 283px;
+    margin: 20px;
+    text-align: center;
+}
+
+.skills-img {
+    width: 283px;
+    height: 283px;
+    background-color: white;
+}
+
+.skills-text {
+    @include module.text-style;
+}
+

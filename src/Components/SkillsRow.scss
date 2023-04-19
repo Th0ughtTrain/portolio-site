@@ -1,0 +1,13 @@
+@use '../_module.scss';
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+}
+
+// need to refactor the styling on the about section so I can fix the p tags here. 
+
+.skills-text {
+    text-align: center;
+
+}

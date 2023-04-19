@@ -1,0 +1,27 @@
+@use '../module';
+
+.contact-wrapper {
+    height: 250px;
+    background-color: module.$secondary;
+    text-align: center;
+    @include module.text-style;
+}
+
+.contact-title {
+    @include module.text-style;
+    font-size: 76px;
+    margin: 10px;
+}
+
+.contact-p{
+    font-size: 23px;
+}
+
+.contact-resume-wrap  {
+    margin-bottom: 30px;
+}
+
+.contact-resume {
+    border: 1px solid white;
+    
+}

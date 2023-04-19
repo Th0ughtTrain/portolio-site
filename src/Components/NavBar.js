@@ -1,14 +1,26 @@
-export default function NavBar() {
+import { useEffect } from 'react';
+import './NavBar.scss';
+
+export default function NavBar(props) {
+    const nav1 = props.sectionNav.section1
+    const nav2 = props.sectionNav.section2
+    const nav3 = props.sectionNav.section3
+
+    console.log (nav1)
+    
+    function goToSection(ref) {
+        window.scrollTo({
+            top: ref.current.offsetTop,
+            behavior: 'smooth'
+        })
+    }
     return (
-        <div>
-            <div>
+            <div className="nav">
                 <ul className="nav-items">
-                    {/* create a tags for each item that links to different parts of the page*/}
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a onClick={() => {goToSection(nav1)}}>About</a></li>
+                    <li><a onClick={() => {goToSection(nav2)}}>Projects</a></li>
+                    <li><a onClick={() => {goToSection(nav3)}}>Contact</a></li>
                 </ul>
             </div>
-        </div>
     )
 }

@@ -1,0 +1,14 @@
+@use '../_module.scss';
+
+h2 {
+    @include module.text-style;
+    font-size: 96px;
+}
+
+.about-p {
+    @include module.text-style;
+    font-size: 23px;
+    text-align: left;
+    margin: auto 20%;
+}  
+

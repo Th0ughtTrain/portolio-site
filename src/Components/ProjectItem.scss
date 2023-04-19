@@ -1,0 +1,61 @@
+@use '../module';
+
+.project-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 60px 0px ;
+    
+
+
+    .project-img {
+    background-color: white;
+    width: 540px;
+    height: 480px;
+    margin: auto 20px;
+    }
+
+    .project-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto 70px;
+        
+        .project-text{
+            @include module.text-style;
+            width: 418px;
+            height: 309px;
+            overflow: hidden;
+            text-align: center; /* will need to change later*/
+            margin: 20px 0px;
+        }
+
+    
+        .btn-row {
+            display: flex;
+
+
+            .btn {
+                width: 100px;
+                border: 1px solid module.$primary;
+                color: module.$primary;
+                margin: 10px;
+
+            }
+        }
+    }
+    
+    .reverse {
+        margin-right: 4em ;
+    
+        
+        .project-text {
+            margin: 20px 0px;
+        }
+
+    }
+}
+
+    
