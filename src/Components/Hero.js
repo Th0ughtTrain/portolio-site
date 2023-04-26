@@ -1,17 +1,19 @@
-import { useRef } from 'react'
+
 import './Hero.scss'
 
 export default function Hero(props) {
     const nav1 = props.sectionNav.section1
     const nav2 = props.sectionNav.section2
     const nav3 = props.sectionNav.section3
+    // const nav4 = props.sectionNav.navSection
     
     function goToSection(ref) {
         window.scrollTo({
-            top: ref.current.offsetTop,
+            top: ref.current.offsetTop - 180,
             behavior: 'smooth'
         })
     }
+
 
     return (
         <div>
@@ -21,9 +23,9 @@ export default function Hero(props) {
             </div>
             <div className='Hero-nav-buttons'>
                 <ul className='hero-ul'>
-                    <li><a onClick={() => {goToSection(nav1)}}>About</a></li>
-                    <li><a onClick={() => {goToSection(nav2)}}>Projects</a></li>
-                    <li><a onClick={() => {goToSection(nav3)}}>Contact</a></li>
+                    <li><button className='large-btn1'  onClick={() => {goToSection(nav1)}}>About</button></li>
+                    <li><button className='large-btn2' onClick={() => {goToSection(nav2)}}>Projects</button></li>
+                    <li><button className='large-btn3' onClick={() => {goToSection(nav3)}}>Contact</button></li>
                 </ul>
             </div>
         </div>

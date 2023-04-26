@@ -14,6 +14,7 @@ function App() {
     section1: useRef(null),
     section2: useRef(null),
     section3: useRef(null),
+    navSection: useRef(null)
   }
 
   return (

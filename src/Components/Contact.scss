@@ -1,27 +1,44 @@
-@use '../module';
+@use '../module' as m;
 
 .contact-wrapper {
+
     height: 250px;
-    background-color: module.$secondary;
+    background-color: m.$secondary;
     text-align: center;
-    @include module.text-style;
+    @include m.text-style;
+
 }
 
 .contact-title {
-    @include module.text-style;
+
+    @include m.text-style;
     font-size: 76px;
     margin: 10px;
+    
 }
 
 .contact-p{
+
     font-size: 23px;
+
 }
 
 .contact-resume-wrap  {
+
     margin-bottom: 30px;
 }
 
 .contact-resume {
-    border: 1px solid white;
-    
+
+    @include m.small-button;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
 }
+
+.contact-resume:active {
+    padding: 2px;
+    font-size: 1.4em;
+}
+
+

@@ -4,7 +4,11 @@
     @include m.base-text;
     font-size: 160px;
     font-family: 'Cookie';
-    margin: 300px 0px 0px 80px
+    @media screen and (min-width: 2000px) {
+        margin: 500px 0px 0px 80px;
+    }
+    
+    margin: 250px 0px 0px 80px
 }
 
 .hero-subtitle {
@@ -19,34 +23,69 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 520px;
     
 
     li  {
         color: m.$primary;
         margin: auto 50px;
 
-        a:before {
+        :before {
             @include m.lrg-button-before
         }
 
-        a {
+        button {
             text-decoration: none;
             @include m.lrg-button;
         }
 
-        a:after {
+        button:after {
             @include m.lrg-button-after;
         }
 
-        a:active {
-           padding: 5px 15px;
-           margin: auto 15px;
+        .large-btn1:active {
+            width: calc(166px - 50%);
+            height: calc(54px - 1%);
+            font-size: 1.5em;
+            margin: auto 46.2px;
 
         }
 
-        @include m.glow-effect(a);
+        .large-btn2:active {
+            width: calc(166px - 40%);
+            height: calc(54px - 1%);
+            font-size: 1.5em;
+            margin: auto 35.5px;
+
+        }
+
+        .large-btn3:active {
+            width: calc(166px - 40%);
+            height: calc(54px - 1%);
+            font-size: 1.5em;
+            margin: auto 37.2spx;
+
+        }
+
+        @include m.glow-effect(button);
     }
+    
+    
+
+    // li :nth-child(2):active {
+    //     width: calc(90%);
+    //     height: calc(54px - 1%);
+    //     margin: auto 20px;
+
+    // }
+
+    // li :nth-child(3):active {
+    //     width: calc(166px - 10%);
+    //     height: calc(54px - 1%);
+    //     font-size: 1.5em;
+    //     margin: auto 20px;
+
+    // }
 
 }
 

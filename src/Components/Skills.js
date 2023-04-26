@@ -1,11 +1,12 @@
 import './Skills.scss'
 
-export default function Skills() {
+export default function Skills(props) {
     /* be sure to add function that allows placement of images */
+    
     return(        
         <div className='skills-container'>
-            <img className="skills-img"></img>
-            <p className="skills-text">PlaceHolder</p>
+            <img className="skills-img" src={props.image}></img>
+            <p className="skills-text">{props.name}</p>
         </div>
     )
 }

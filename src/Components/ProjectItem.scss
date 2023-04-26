@@ -1,4 +1,4 @@
-@use '../module';
+@use '../module' as m;
 
 .project-container {
 
@@ -7,14 +7,27 @@
     justify-content: center;
     margin: 0px 0px 60px 0px ;
     
-
-
     .project-img {
     background-color: white;
     width: 540px;
-    height: 480px;
     margin: auto 20px;
+    border-radius: 10px;
+
     }
+
+    .img1 {
+        box-shadow: 0 0 1em 0 #00ace198, 0 0 1em 0 #00ace198 
+    }
+
+    .img2 {
+        box-shadow: 0 0 1em 0 #f05b5b93, 0 0 1em 0 #f05b5b93
+    }
+
+    .img3 {
+        box-shadow: 0 0 1em 0 #f1c3888a, 0 0 1em 0 #f1c3888a
+    }
+
+    
 
     .project-description {
         display: flex;
@@ -22,29 +35,51 @@
         align-items: center;
         justify-content: center;
         margin: auto 70px;
+
+        h2 {
+
+            font-size: 2em;
+
+        }
         
-        .project-text{
-            @include module.text-style;
+        .project-text {
+
+            @include m.text-style;
             width: 418px;
-            height: 309px;
             overflow: hidden;
-            text-align: center; /* will need to change later*/
-            margin: 20px 0px;
+            text-align: center; 
+            margin: 5px 0px;
+            font-size: 1.4em;
         }
 
     
         .btn-row {
             display: flex;
 
-
+    
             .btn {
-                width: 100px;
-                border: 1px solid module.$primary;
-                color: module.$primary;
-                margin: 10px;
-
+                @include m.small-button;
+                text-decoration: none;
             }
+
+            .btn ::before {
+                @include m.small-button-before;
+            }
+
+            .btn::after {
+                @include m.small-button-after;
+            }
+            
+            @include m.glow-effect-class(btn);
+
+            
         }
+
+        .btn-row :active {
+                width: 90px;
+                height: 20px;
+                margin: auto 15px
+            }
     }
     
     .reverse {
@@ -56,6 +91,8 @@
         }
 
     }
+
+    
 }
 
     

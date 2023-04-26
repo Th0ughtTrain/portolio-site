@@ -15,30 +15,44 @@
         text-decoration: none;
         list-style: none;
 
-        li a {
+        li button {
             @include m.text-style;
             font-size: 36px;
             margin: 20px 50px;
             cursor: pointer;
+            background-color: transparent;
+            border: none;
         }
 
-        li a:hover {
+        li button:hover {
             color: m.$secondary;
         }
     }
     
-    ul :nth-child(1) a:active {
+    ul :nth-child(1) button:active {
             font-size: 30px;
             margin: 20px 58.1px;
         }
         
-    ul :nth-child(2) a:active {
+    ul :nth-child(2) button:active {
             font-size: 30px;
             margin: 20px 60.7px;
     }
 
-    ul :nth-child(3) a:active {
+    ul :nth-child(3) button:active {
             font-size: 30px;
             margin: 20px 60.3px;
     }        
+}
+
+.static {
+    position: static;
+}
+
+.fixed {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  margin-bottom: 40px;
+    
 }
