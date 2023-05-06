@@ -11,3 +11,25 @@
     text-align: center;
 
 }
+
+@media screen and (max-width: 720px) {
+
+    .skill-row-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill-row {
+
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        
+    }
+    
+    .skills-text {
+
+        text-align: center;
+    
+    }
+}

@@ -3,9 +3,9 @@ import ProjectItemReverse from "./ProjectItemReverse"
 
 export default function Projects(props) {
 
-    const image1 = ".//Drawing Pad.png"
-    const image2 = './/Date Night Randomizer.png'
-    const image3 = './/Coffee Coffee.png'
+    const image1 = ".//DrawingPad.png"
+    const image2 = './/DateNightRandomizer.png'
+    const image3 = './/CoffeeCoffee.png'
 
     const boxShadowClass1 = "project-img img1"
     const boxShadowClass2 = 'project-img img2'

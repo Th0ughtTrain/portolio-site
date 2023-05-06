@@ -1,14 +1,28 @@
-@use '../_module.scss';
+@use '../_module.scss' as m;
 
 h2 {
-    @include module.text-style;
+    @include m.text-style;
     font-size: 96px;
 }
 
 .about-p {
-    @include module.text-style;
+    @include m.text-style;
     font-size: 23px;
     text-align: left;
     margin: auto 20%;
-}  
+}
+
+@media screen and (max-width: 720px) {
+    h2 {
+        @include m.text-style;
+        font-size: 48px;
+    }
+    
+    .about-p {
+        @include m.text-style;
+        font-size: 16px;
+        text-align: left;
+        margin: auto 15%;
+    }
+}
 

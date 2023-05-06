@@ -12,7 +12,7 @@ export default function About(props) {
                 When I'm not coding my own projects, I'm learning with various code groups like Codecademy, working on other creative endeavors outside of coding, or coaching. Check out a few of my projects below!
             </p >
             <p className='about-p'>
-            I'm interested in collaborating with other enthusiastic developers to build meaningful web experiences. If that sounds like something you're looking for, feel free to reach out!
+            I'm interested in collaborating with other enthusiastic developers to build meaningful web experiences. If that sounds like something you're looking for, feel free to reach out.
             </p>
             <div>
                 <h2>Skills</h2>

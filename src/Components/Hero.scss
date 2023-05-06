@@ -1,21 +1,30 @@
 @use '../module.scss' as m;
 
 .hero-name {
+
     @include m.base-text;
     font-size: 160px;
     font-family: 'Cookie';
+    margin: 250px 0px 0px 80px;
+
     @media screen and (min-width: 2000px) {
         margin: 500px 0px 0px 80px;
     }
+
+    @media screen and (min-width: 721px) and (max-width: 900px ) {
+        font-size: 100px;
+    }
     
-    margin: 250px 0px 0px 80px
+   
 }
 
 .hero-subtitle {
+
     @include m.base-text;
     font-family: 'Gelasio', serif;
     font-size: 40px;
     margin: 0px 0px 90px 10em;
+
 }
 
 .hero-ul {
@@ -71,21 +80,93 @@
     }
     
     
+}
 
-    // li :nth-child(2):active {
-    //     width: calc(90%);
-    //     height: calc(54px - 1%);
-    //     margin: auto 20px;
+@media screen and (max-width: 720px ) {
+    
+    .hero-name {
+        @include m.base-text;
+        font-size: 80px;
+        font-family: 'Cookie';        
+        margin: 100px 0px 0px 20px
+    }
 
-    // }
+    .hero-subtitle {
+        @include m.base-text;
+        font-family: 'Gelasio', serif;
+        font-size: 20px;
+        margin: 0px 0px 90px 10em;
+    }
 
-    // li :nth-child(3):active {
-    //     width: calc(166px - 10%);
-    //     height: calc(54px - 1%);
-    //     font-size: 1.5em;
-    //     margin: auto 20px;
+    .hero-ul {
 
-    // }
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 520px;
+        
+    
+        li{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: m.$primary;
+            width: 120px;
+            height: 60px;
+            margin: 10px 35px;
+            // border: 1px solid white;
+    
+            :before {
+                @include m.lrg-button-before-mobile
+            }
+    
+            button {
+                text-decoration: none;
+                @include m.lrg-button-mobile;
+            }
+    
+            button:after {
+                @include m.lrg-button-after-mobile;
+            }
+    
+            .large-btn1:active {
+                width: calc(100px - 30%);
+                // height: calc(50px - 1%);
+                font-size: 12px;
+                margin: 13px 20px;
+    
+            }
+    
+            .large-btn2:active {
+
+                width: calc(100px - 40%);
+                height: calc(50px - 1%);
+                font-size: 12px;
+                // margin: auto 35.5px;
+    
+            }
+    
+            .large-btn3:active {
+                width: calc(100px - 40%);
+                // height: calc(50px - 1%);
+                font-size: 12px;
+                // margin: auto 37.2px;
+    
+            }
+
+            @include m.glow-effect-mobile(button);
+
+        }
+        
+        
+    }
+
+    
+
+
 
 }
 

@@ -1,6 +1,4 @@
 import { useRef } from 'react';
-import { forwardRef } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import Hero from './Components/Hero';
 import NavBar from './Components/NavBar';
@@ -23,7 +21,9 @@ function App() {
       <NavBar sectionNav={navObject}></NavBar>
       <About sectionNav={navObject}></About>
       <Projects sectionNav={navObject} ></Projects>
-      <Contact sectionNav={navObject} ></Contact>
+      <div className="footer">
+        <Contact sectionNav={navObject} ></Contact>
+      </div>
     </div>
   );
 }

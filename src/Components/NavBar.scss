@@ -20,7 +20,7 @@
             font-size: 36px;
             margin: 20px 50px;
             cursor: pointer;
-            background-color: transparent;
+            background: none;
             border: none;
         }
 
@@ -55,4 +55,64 @@
   top: 0;
   margin-bottom: 40px;
     
+}
+
+@media screen and (max-width: 720px) {
+    
+    .nav {
+        background-color: m.$primary;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+    
+        ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            list-style: none;
+    
+            li button {
+                @include m.text-style;
+                font-size: 25px;
+                margin: 10px 15px;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+            }
+    
+            li button:hover {
+                color: m.$secondary;
+            }
+        }
+        
+        ul :nth-child(1) button:active {
+                font-size: 30px;
+                margin: 20px 58.1px;
+            }
+            
+        ul :nth-child(2) button:active {
+                font-size: 30px;
+                margin: 20px 60.7px;
+        }
+    
+        ul :nth-child(3) button:active {
+                font-size: 30px;
+                margin: 20px 60.3px;
+        }        
+    }
+    
+    .static {
+        position: static;
+    }
+    
+    .fixed {
+      position: -webkit-sticky; 
+      position: sticky;
+      top: 0;
+      margin-bottom: 40px;
+        
+    }
 }

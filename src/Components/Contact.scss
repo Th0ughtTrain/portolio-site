@@ -1,8 +1,9 @@
 @use '../module' as m;
 
 .contact-wrapper {
-
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
     background-color: m.$secondary;
     text-align: center;
     @include m.text-style;
@@ -14,7 +15,6 @@
     @include m.text-style;
     font-size: 76px;
     margin: 10px;
-    
 }
 
 .contact-p{
@@ -28,17 +28,122 @@
     margin-bottom: 30px;
 }
 
+
 .contact-resume {
 
     @include m.small-button;
     text-decoration: none;
     font-size: 1.5em;
     padding: 5px;
+
 }
 
 .contact-resume:active {
+
     padding: 2px;
     font-size: 1.4em;
+    
 }
 
+
+.socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 50px;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 110px;
+        margin: auto 20px;
+    }
+}
+
+.github {
+    width: 100px;
+    margin: auto 20px;
+}
+
+.github:active {
+    width: 90px;
+    margin: 4.5px 25px;
+}
+
+.linked-in {
+    width: 100px;
+    margin: auto 20px;
+}
+
+.linked-in:active {
+    width: 90px;
+    margin: auto 25px;
+}
+
+@media screen and (max-width: 720px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 480px;
+        text-align: center;
+        @include m.text-style;
+        z-index: -3;
+    
+    }
+    
+    .contact-title {
+    
+        @include m.text-style;
+        font-size: 54px;
+        margin: 10px;
+        
+    }
+    
+    .contact-p{
+    
+        font-size: 16px;
+    
+    }
+    
+
+    .socials {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto 50px;
+    
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 110px;
+            margin: auto 20px;
+        }
+    }
+    
+    .github {
+        width: 80px;
+        margin: auto 20px;
+    }
+    
+    .github:active {
+        width: 70px;
+        margin: 4.5px 25px;
+    }
+    
+    .linked-in {
+        width: 80px;
+        margin: auto 20px;
+    }
+    
+    .linked-in:active {
+        width: 70px;
+        margin: auto 25px;
+    }
+}
 

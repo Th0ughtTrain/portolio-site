@@ -30,6 +30,7 @@
     
 
     .project-description {
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,15 +42,16 @@
             font-size: 2em;
 
         }
-        
+
         .project-text {
 
             @include m.text-style;
             width: 418px;
             overflow: hidden;
             text-align: center; 
-            margin: 5px 0px;
+            margin: 5px 20px 5px ;
             font-size: 1.4em;
+            border: 1px solid white;
         }
 
     
@@ -95,4 +97,103 @@
     
 }
 
+@media screen and (max-width: 1100px) {
+
+    .project-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 80px 0px ;
+        
+        .project-img {
+        background-color: white;
+        width: 270px;
+        margin: auto 20px;
+        border-radius: 10px;
     
+        }
+    
+        .img1 {
+            box-shadow: 0 0 1em 0 #00ace198, 0 0 1em 0 #00ace198 
+        }
+    
+        .img2 {
+            box-shadow: 0 0 1em 0 #f05b5b93, 0 0 1em 0 #f05b5b93
+        }
+    
+        .img3 {
+            box-shadow: 0 0 1em 0 #f1c3888a, 0 0 1em 0 #f1c3888a
+        }
+    
+        
+    
+        .project-description {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto 70px;
+    
+            h2 {
+    
+                font-size: 2em;
+    
+            }
+                
+            .project-text {
+    
+                @include m.text-style;
+                width: 418px;
+                overflow: hidden;
+                text-align: center; 
+                margin: 5px 0px;
+                font-size: 1em;
+            }
+    
+        
+            .btn-row {
+                display: flex;
+    
+        
+                .btn {
+                    @include m.small-button;
+                    text-decoration: none;
+                }
+    
+                .btn ::before {
+                    @include m.small-button-before;
+                }
+    
+                .btn::after {
+                    @include m.small-button-after;
+                }
+                
+                @include m.glow-effect-class(btn);
+    
+                
+            }
+    
+            .btn-row :active {
+                    width: 90px;
+                    height: 20px;
+                    margin: auto 15px
+                }
+        }
+        
+        .reverse {
+            margin-right: 4em ;
+        
+            
+            .project-text {
+                margin: 20px 0px;
+            }
+    
+        }
+    
+        
+    }
+
+}

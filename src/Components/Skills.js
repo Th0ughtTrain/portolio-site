@@ -5,7 +5,7 @@ export default function Skills(props) {
     
     return(        
         <div className='skills-container'>
-            <img className="skills-img" src={props.image}></img>
+            <img className="skills-img" src={props.image} alt={props.name}></img>
             <p className="skills-text">{props.name}</p>
         </div>
     )

@@ -4,15 +4,16 @@
 
     height: 334px;
     width: 283px;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
 
 }
 
 .skills-img {
 
-    width: 283px;
-    height: 283px;
+    width: 200px;
+    height: 200px;
+    color: white
     
 }
 
@@ -22,3 +23,29 @@
     
 }
 
+@media screen and (max-width: 780px) {
+
+    .skills-container {
+
+        height: 111px;
+        width: 94px;
+        margin: 20px;
+        text-align: center;
+        
+    }
+    
+    .skills-img {
+    
+        width: 94px;
+        height: 94px;
+        color: white
+        
+    }
+    
+    .skills-text {
+    
+        @include module.text-style;
+        
+    }
+
+}
