@@ -2,16 +2,16 @@ import './SkillsRow.scss'
 import Skills from './Skills'
 
 export default function SkillsRow() {
-    const image1 = "/Html5.png";
-    const image2 = '/CSS3.png';
-    const image3 = '/Javascript.png';
-    const image4 = '/ReactNative.png'
-    const image5 = '/Sass.png';
-    const image6 = '/Jquery.png';
-    const image7 = '/Git.png';
-    const image8 = '/github-mark-white.png';
-    const image9 = '/Lunacy.png';
-    const image10 = '/AdobePhotoshop.png';
+    const image1 = ".//Html5.png";
+    const image2 = './/CSS3.png';
+    const image3 = './/Javascript.png';
+    const image4 = './/ReactNative.png'
+    const image5 = './/Sass.png';
+    const image6 = './/Jquery.png';
+    const image7 = './/Git.png';
+    const image8 = './/github-mark-white.png';
+    const image9 = './/Lunacy.png';
+    const image10 = './/AdobePhotoshop.png';
 
     const name1 = 'HTML'
     const name2 = "CSS"
