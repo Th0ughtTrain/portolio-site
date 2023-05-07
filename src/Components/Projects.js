@@ -44,7 +44,7 @@ export default function Projects(props) {
                     title={title2} 
                     description={description2} 
                     github="https://github.com/Th0ughtTrain/date-night-randomizer"
-                    site="https://th0ughttrain.github.io/Coffee-Coffee-Website/"
+                    site="https://th0ughttrain.github.io/date-night-randomizer/"
                     alt="screenshot of date night randomizer"
                 />
                 <ProjectItem 
@@ -53,7 +53,7 @@ export default function Projects(props) {
                     title={title3} 
                     description={description3} 
                     github="https://github.com/Th0ughtTrain/Coffee-Coffee-Website" 
-                    site="https://th0ughttrain.github.io/date-night-randomizer/"
+                    site="https://th0ughttrain.github.io/Coffee-Coffee-Website/"
                     alt= "screenshot of Coffee Coffee website"
                 />
             </div>
