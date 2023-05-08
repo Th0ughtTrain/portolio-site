@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portolio-site/static/css/main.56edcff4.css",
-    "main.js": "/portolio-site/static/js/main.2e4516c3.js",
+    "main.js": "/portolio-site/static/js/main.ba575216.js",
     "static/js/787.b00f5892.chunk.js": "/portolio-site/static/js/787.b00f5892.chunk.js",
     "index.html": "/portolio-site/index.html",
     "main.56edcff4.css.map": "/portolio-site/static/css/main.56edcff4.css.map",
-    "main.2e4516c3.js.map": "/portolio-site/static/js/main.2e4516c3.js.map",
+    "main.ba575216.js.map": "/portolio-site/static/js/main.ba575216.js.map",
     "787.b00f5892.chunk.js.map": "/portolio-site/static/js/787.b00f5892.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56edcff4.css",
-    "static/js/main.2e4516c3.js"
+    "static/js/main.ba575216.js"
   ]
 }
