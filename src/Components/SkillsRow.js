@@ -12,6 +12,8 @@ export default function SkillsRow() {
     const image8 = './/github-mark-white.png';
     const image9 = './/Lunacy.png';
     const image10 = './/AdobePhotoshop.png';
+    const image11 = ".//Nodejs.png"
+    const image12 = ".//MongoDB.png"
 
     const name1 = 'HTML'
     const name2 = "CSS"
@@ -23,6 +25,8 @@ export default function SkillsRow() {
     const name8 = 'Github'
     const name9 = 'Lunacy'
     const name10 = 'Photoshop'
+    const name11 = "Node"
+    const name12 = "MongoDB"
     
 
     return (
@@ -43,6 +47,8 @@ export default function SkillsRow() {
                 <div className='skill-row'>
                     <Skills image={image9} name={name9} />
                     <Skills image={image10} name={name10} />
+                    <Skills image={image11} name={name11} />
+                    <Skills image={image12} name={name12} />
                 </div>
             </div>
         </div>
