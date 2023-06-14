@@ -14,6 +14,9 @@ export default function SkillsRow() {
     const image10 = './/AdobePhotoshop.png';
     const image11 = ".//Nodejs.png"
     const image12 = ".//MongoDB.png"
+    const image13 = ".//expresshexstickeropenjs.png"
+    const image14 = ".//AmazonWebServices.png"
+    const image15 = ".//Nginx.png"
 
     const name1 = 'HTML'
     const name2 = "CSS"
@@ -25,8 +28,12 @@ export default function SkillsRow() {
     const name8 = 'Github'
     const name9 = 'Lunacy'
     const name10 = 'Photoshop'
-    const name11 = "Node"
+    const name11 = "Node.js"
     const name12 = "MongoDB"
+    const name13 = "Express.js"
+    const name14 = "AWS"
+    const name15 = "Nginx"
+    
     
 
     return (
@@ -49,6 +56,11 @@ export default function SkillsRow() {
                     <Skills image={image10} name={name10} />
                     <Skills image={image11} name={name11} />
                     <Skills image={image12} name={name12} />
+                </div>
+                <div className='skill-row'>
+                    <Skills image={image13} name={name13} />
+                    <Skills image={image14} name={name14} />
+                    <Skills image={image15} name={name15} />
                 </div>
             </div>
         </div>

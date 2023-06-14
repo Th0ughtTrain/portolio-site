@@ -1,7 +1,7 @@
 import './ProjectItem.scss'
 
 export default function ProjectItemReverse(props) {
-
+    const github = props.github
     if (window.innerWidth < 1100) {
 
         return (
@@ -12,7 +12,7 @@ export default function ProjectItemReverse(props) {
                         <h2>{props.title}</h2>
                         <p className='project-text'>{props.description}</p>
                         <div className='btn-row'>    
-                            <a className='btn' href={props.github}>Github</a>
+                             { github !== "" && <a className='btn' href={props.github}>Github</a>} 
                             <a className='btn' href={props.site}>Site</a>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ export default function ProjectItemReverse(props) {
                             <h2>{props.title}</h2>
                             <p className='project-text'>{props.description}</p>
                             <div className='btn-row'>    
-                                <a className='btn' href={props.github}>Github</a>
+                                 { github !== "" && <a className='btn' href={props.github}>Github</a>} 
                                 <a className='btn' href={props.site}>Site</a>
                             </div>
                         </div>
