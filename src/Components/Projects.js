@@ -60,8 +60,8 @@ export default function Projects(props) {
                     title={title3} 
                     description={description3} 
                     github="https://github.com/Th0ughtTrain/Coffee-Coffee-Website" 
-                    site="https://randommathgen.com/"
-                    alt= "screenshot of random math generator"
+                    site="https://th0ughttrain.github.io/Coffee-Coffee-Website/"
+                    alt= "screenshot of Coffee Coffee front page"
                 />
                 <ProjectItemReverse 
                     boxshd={boxShadowClass4} 
@@ -69,8 +69,8 @@ export default function Projects(props) {
                     title={title4} 
                     description={description4} 
                     github=""
-                    site="https://th0ughttrain.github.io/date-night-randomizer/"
-                    alt="screenshot of date night randomizer"
+                    site="https://randommathgen.com/"
+                    alt="screenshot of random math generator"
                 />
             </div>
         </div>
